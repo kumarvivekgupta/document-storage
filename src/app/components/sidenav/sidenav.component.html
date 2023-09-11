@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side">
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['page-one']">Document List</a>
+        <a mat-list-item [routerLink]="['file-upload']">File Upload</a>
+        <a mat-list-item (click)="logout()">Logout</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
